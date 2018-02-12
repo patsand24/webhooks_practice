@@ -12,6 +12,10 @@ server.get('/', (req, res) => {
     res.send(`Hello world from ${port}`);
 });
 
+server.get('/payload', (req, res) => {
+    res.send(`Hello world from ${port}`);
+});
+
 server.post('/paylaod', (req, res) => {
     res.json(req.body);
 });
